@@ -29,8 +29,7 @@ ENV HOST="localhost" \
 
 USER root
 
-RUN chown -R ${username}:${username} /bitnami/moodle \
-    && chown -R ${username}:${username} /bitnami/moodledata
+RUN chown -R ${username}:${username} /bitnami/moodle && chown -R ${username}:${username} /bitnami/moodledata
 
 VOLUME /bitnami/moodle
 VOLUME /bitnami/moodledata
